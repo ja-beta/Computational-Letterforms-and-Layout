@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Jupyter Notebook - Notebook</title>
+
+
+
+<link rel="icon" type="image/x-icon" href="/static/favicons/favicon-notebook.ico" class="favicon">
+
+
+
+
+
+
+
+<link rel="stylesheet" type="text/css" href="/custom/custom.css">
+
+
+
+</head>
+
+<body data-notebook="notebooks">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script id="jupyter-config-data" type="application/json">
+
+{"allow_hidden_files": false, "appName": "Jupyter Notebook", "appNamespace": "notebook", "appSettingsDir": "/Users/jasminenackash/miniconda3/share/jupyter/lab/settings", "appUrl": "/lab", "appVersion": "7.2.2", "baseUrl": "/", "buildAvailable": true, "buildCheck": true, "cacheFiles": true, "copyAbsolutePath": false, "devMode": false, "disabledExtensions": [], "exposeAppInBrowser": false, "extensionManager": {"can_install": true, "install_path": "/Users/jasminenackash/miniconda3", "name": "PyPI"}, "extraLabextensionsPath": [], "federated_extensions": [{"entrypoints": null, "extension": "./extension", "load": "static/remoteEntry.ddc4857c90c9be31c55a.js", "name": "jupysql-plugin", "style": "./style"}, {"entrypoints": null, "extension": "./extension", "load": "./static/remoteEntry.66089da2.js", "name": "anywidget"}, {"entrypoints": null, "extension": "./extension", "load": "static/remoteEntry.5cbb9d2323598fbda535.js", "name": "jupyterlab_pygments", "style": "./style"}, {"entrypoints": null, "extension": "./extension", "load": "static/remoteEntry.1c9b77c557d03a2498f4.js", "name": "ipylab", "style": "./style"}, {"entrypoints": null, "extension": "./extension", "load": "static/remoteEntry.04dfa589925e7e7c6a3d.js", "name": "@jupyter-notebook/lab-extension", "style": "./style"}, {"entrypoints": null, "extension": "./extension", "load": "static/remoteEntry.e4ff09401a2f575928c0.js", "name": "@jupyter-widgets/jupyterlab-manager"}], "frontendUrl": "/", "fullAppUrl": "/lab", "fullLabextensionsUrl": "/lab/extensions", "fullLicensesUrl": "/lab/api/licenses", "fullListingsUrl": "/lab/api/listings", "fullMathjaxUrl": "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js", "fullSettingsUrl": "/lab/api/settings", "fullStaticUrl": "/static/notebook", "fullThemesUrl": "/lab/api/themes", "fullTranslationsApiUrl": "/lab/api/translations", "fullTreeUrl": "/lab/tree", "fullWorkspacesApiUrl": "/lab/api/workspaces", "jupyterConfigDir": "/Users/jasminenackash/.jupyter", "labextensionsPath": ["/Users/jasminenackash/Library/Jupyter/labextensions", "/Users/jasminenackash/.local/share/jupyter/labextensions", "/Users/jasminenackash/miniconda3/share/jupyter/labextensions", "/usr/local/share/jupyter/labextensions", "/usr/share/jupyter/labextensions"], "labextensionsUrl": "/lab/extensions", "licensesUrl": "/lab/api/licenses", "listingsUrl": "/lab/api/listings", "mathjaxConfig": "TeX-AMS_HTML-full,Safe", "nbclassic_enabled": false, "news": {"disabled": false}, "notebookPage": "notebooks", "notebookStartsKernel": true, "notebookVersion": "[2, 14, 2]", "preferredPath": "/", "quitButton": true, "rootUri": "file:///Users/jasminenackash/Desktop/ITP/Spring%202025/Computational%20letterforms%20and%20layout", "schemasDir": "/Users/jasminenackash/miniconda3/share/jupyter/lab/schemas", "settingsUrl": "/lab/api/settings", "staticDir": "/Users/jasminenackash/miniconda3/lib/python3.12/site-packages/notebook/static", "templatesDir": "/Users/jasminenackash/miniconda3/lib/python3.12/site-packages/notebook/templates", "terminalsAvailable": true, "themesDir": "/Users/jasminenackash/miniconda3/share/jupyter/lab/themes", "themesUrl": "/lab/api/themes", "token": "c0ed24589bcb8d0d0d811070ebee7fe657ccca01db99a54d", "translationsApiUrl": "/lab/api/translations", "treeUrl": "/lab/tree", "userSettingsDir": "/Users/jasminenackash/.jupyter/lab/user-settings", "virtualDocumentsUri": "file:///Users/jasminenackash/Desktop/ITP/Spring%202025/Computational%20letterforms%20and%20layout/.virtual_documents", "workspacesApiUrl": "/lab/api/workspaces", "workspacesDir": "/Users/jasminenackash/.jupyter/lab/workspaces", "wsUrl": ""}
+
+</script>
+
+<script src="/static/notebook/bundle.js" main="index"></script>
+
+
+
+<script type="text/javascript">
+
+/* Remove token from URL. */
+
+(function () {
+
+var parsedUrl = new URL(window.location.href);
+
+if (parsedUrl.searchParams.get('token')) {
+
+parsedUrl.searchParams.delete('token');
+
+window.history.replaceState({ }, '', parsedUrl.href);
+
+}
+
+})();
+
+</script>
+
+
+
+</body>
+
+</html>

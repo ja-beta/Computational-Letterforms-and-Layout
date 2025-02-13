@@ -1,0 +1,1608 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+
+<head>
+
+<meta charset="utf-8" />
+
+<meta name="generator" content="pandoc" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+
+<meta property="og:type" content="article" />
+
+<title>Computational Letterforms and Layout (Schedule, Spring 2025)</title>
+
+<style>
+
+html {
+
+line-height: 1.5;
+
+font-family: serif;
+
+font-size: 12pt;
+
+color: #000;
+
+background-color: #fff;
+
+}
+
+body {
+
+margin: 0 auto;
+
+max-width: 36em;
+
+padding-left: 50px;
+
+padding-right: 50px;
+
+padding-top: 50px;
+
+padding-bottom: 50px;
+
+/*hyphens: auto;*/
+
+/*overflow-wrap: break-word;*/
+
+text-rendering: optimizeLegibility;
+
+font-kerning: normal;
+
+}
+
+footer {
+
+border-top: 1px black solid;
+
+margin-top: 2em;
+
+font-size: 80%;
+
+}
+
+@media (max-width: 600px) {
+
+body {
+
+font-size: 0.9em;
+
+padding: 1em;
+
+}
+
+}
+
+@media print {
+
+body {
+
+background-color: transparent;
+
+color: black;
+
+font-size: 12pt;
+
+}
+
+p, h2, h3 {
+
+orphans: 3;
+
+widows: 3;
+
+}
+
+h2, h3, h4 {
+
+page-break-after: avoid;
+
+}
+
+}
+
+p {
+
+margin: 1em 0;
+
+}
+
+a {
+
+color: #1a1a1a;
+
+}
+
+a:visited {
+
+color: #1a1a1a;
+
+}
+
+img, video {
+
+max-width: 100%;
+
+}
+
+figure {
+
+padding: 1em;
+
+}
+
+figcaption {
+
+font-size: 0.75em;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+
+margin-top: 1.4em;
+
+line-height: 1.2em;
+
+font-family: sans-serif;
+
+font-weight: normal;
+
+}
+
+h5, h6 {
+
+font-size: 1em;
+
+font-style: italic;
+
+}
+
+h6 {
+
+font-weight: normal;
+
+}
+
+p.author, p.date {
+
+font-size: 0.8em;
+
+margin: 0.5em 0;
+
+}
+
+ol, ul {
+
+padding-left: 1.7em;
+
+margin-top: 1em;
+
+}
+
+li > ol, li > ul {
+
+margin-top: 0;
+
+}
+
+blockquote {
+
+margin: 1em 0 1em 1.7em;
+
+padding-left: 1em;
+
+border-left: 2px solid #e6e6e6;
+
+color: #606060;
+
+}
+
+code {
+
+font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+
+font-size: 85%;
+
+margin: 0;
+
+}
+
+pre {
+
+margin: 1em 0;
+
+font-size: 80%;
+
+overflow: auto;
+
+}
+
+pre code {
+
+padding: 0;
+
+overflow: visible;
+
+overflow-wrap: normal;
+
+}
+
+.sourceCode {
+
+background-color: transparent;
+
+overflow: visible;
+
+}
+
+hr {
+
+background-color: #1a1a1a;
+
+border: none;
+
+height: 1px;
+
+margin: 1em 0;
+
+}
+
+table {
+
+margin: 1em 0;
+
+border-collapse: collapse;
+
+width: 100%;
+
+overflow-x: auto;
+
+display: block;
+
+font-variant-numeric: lining-nums tabular-nums;
+
+}
+
+table caption {
+
+margin-bottom: 0.75em;
+
+}
+
+tbody {
+
+margin-top: 0.5em;
+
+border-top: 1px solid #1a1a1a;
+
+border-bottom: 1px solid #1a1a1a;
+
+}
+
+th {
+
+border-top: 1px solid #1a1a1a;
+
+padding: 0.25em 0.5em 0.25em 0.5em;
+
+}
+
+td {
+
+padding: 0.125em 0.5em 0.25em 0.5em;
+
+}
+
+header {
+
+margin-bottom: 2em;
+
+}
+
+#TOC li {
+
+list-style: none;
+
+}
+
+#TOC a:not(:hover) {
+
+text-decoration: none;
+
+}
+
+
+
+code{white-space: pre-wrap;}
+
+span.smallcaps{font-variant: small-caps;}
+
+span.underline{text-decoration: underline;}
+
+div.column{display: inline-block; vertical-align: top; width: 50%;}
+
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+
+ul.task-list{list-style: none;}
+
+.display.math{display: block; text-align: center; margin: 0.5rem auto;}
+
+</style>
+
+<!--[if lt IE 9]>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+
+<![endif]-->
+
+</head>
+
+<body>
+
+<header id="title-block-header">
+
+<img src="/public/charactron-header.png" alt="Header image (Charactron)"
+
+style="width: 100%">
+
+<h1 class="title">Computational Letterforms and Layout (Schedule, Spring
+
+2025)</h1>
+
+</header>
+
+<nav id="TOC" role="doc-toc">
+
+<h2 id="toc-title">Contents</h2>
+
+<ul>
+
+<li><a href="#unit-α-letters-as-numbers"
+
+id="toc-unit-α-letters-as-numbers">Unit α: Letters as numbers</a>
+
+<ul>
+
+<li><a href="#session-01-digital-writing-from-scratch"
+
+id="toc-session-01-digital-writing-from-scratch">Session 01: Digital
+
+writing from scratch</a></li>
+
+<li><a href="#session-02-python-introduction"
+
+id="toc-session-02-python-introduction">Session 02: Python
+
+introduction</a></li>
+
+<li><a href="#session-03-text-encodings-and-glitch-poetics"
+
+id="toc-session-03-text-encodings-and-glitch-poetics">Session 03: Text
+
+encodings and glitch poetics</a></li>
+
+</ul></li>
+
+<li><a href="#unit-β-on-the-page-against-the-page"
+
+id="toc-unit-β-on-the-page-against-the-page">Unit β: On the page,
+
+against the page</a>
+
+<ul>
+
+<li><a href="#session-04-web-pages"
+
+id="toc-session-04-web-pages">Session 04: Web pages</a></li>
+
+<li><a href="#session-05-generating-markup-part-1"
+
+id="toc-session-05-generating-markup-part-1">Session 05: Generating
+
+markup, part 1</a></li>
+
+<li><a href="#session-06-generating-markup-part-2"
+
+id="toc-session-06-generating-markup-part-2">Session 06: Generating
+
+markup, part 2</a></li>
+
+</ul></li>
+
+<li><a href="#unit-γ-models-of-the-asemic"
+
+id="toc-unit-γ-models-of-the-asemic">Unit γ: Models of the asemic</a>
+
+<ul>
+
+<li><a href="#session-07-writing-as-gesture"
+
+id="toc-session-07-writing-as-gesture">Session 07: Writing as
+
+gesture</a></li>
+
+<li><a href="#session-08-writing-as-data"
+
+id="toc-session-08-writing-as-data">Session 08: Writing as data</a></li>
+
+<li><a href="#session-09-plots-and-schemes"
+
+id="toc-session-09-plots-and-schemes">Session 09: Plots and
+
+schemes</a></li>
+
+</ul></li>
+
+<li><a href="#unit-δ-type-and-computation"
+
+id="toc-unit-δ-type-and-computation">Unit δ: Type and computation</a>
+
+<ul>
+
+<li><a href="#session-10-fonts-as-data"
+
+id="toc-session-10-fonts-as-data">Session 10: Fonts as data</a></li>
+
+<li><a href="#session-11-fonts-as-instructions"
+
+id="toc-session-11-fonts-as-instructions">Session 11: Fonts as
+
+instructions</a></li>
+
+<li><a href="#session-12-wildcard" id="toc-session-12-wildcard">Session
+
+12: Wildcard</a></li>
+
+<li><a href="#sessions-13-and-14-final-project-presentations"
+
+id="toc-sessions-13-and-14-final-project-presentations">Sessions 13 and
+
+14: Final project presentations</a></li>
+
+</ul></li>
+
+</ul>
+
+</nav>
+
+<p><a href="/">Syllabus here</a>. Readings should be generally available
+
+on the web, unless otherwise indicated. Some readings will only be
+
+accessible when connected to an NYU network. Please contact me if you
+
+have trouble accessing any of the readings.</p>
+
+<h1 id="unit-α-letters-as-numbers">Unit α: Letters as numbers</h1>
+
+<h2 id="session-01-digital-writing-from-scratch">Session 01: Digital
+
+writing from scratch</h2>
+
+<p>Date: 2025-01-23</p>
+
+<ul>
+
+<li>Class introduction</li>
+
+<li>Invent digital writing from scratch</li>
+
+<li><a href="/public/decks/material-works.pdf">Some material works and
+
+theory</a></li>
+
+</ul>
+
+<h3 id="to-do-before-the-next-session">To-do before the next
+
+session</h3>
+
+<p>Please install <a href="https://www.python.org/downloads/">Python</a>
+
+on your computer. Once Python is installed, use the <code>pip</code>
+
+command to <a
+
+href="https://jupyter.org/install#jupyter-notebook">install Jupyter
+
+Notebook</a>. Note that this will probably require doing a little bit of
+
+work at the command line (Terminal on macOS, PowerShell on Windows).
+
+Make sure that you can launch Jupyter Notebook on your machine before we
+
+begin next session.</p>
+
+<p><strong>NOTE</strong>: If you already have a working installation of
+
+Python 3 on your computer, you don’t need to install it again! Just use
+
+the version that you already have installed.</p>
+
+<p>Here are two good tutorials on YouTube:</p>
+
+<ul>
+
+<li><a href="https://www.youtube.com/watch?v=klTABjwYwoc">Install Python
+
+and Jupyter Notebook on Windows 11</a></li>
+
+<li><a href="https://www.youtube.com/watch?v=z7zOkRubIrU">Install Python
+
+and Jupyter Notebook on macOS</a> (more technical users may want to
+
+install with <a href="https://brew.sh/">Homebrew</a>, though note that
+
+Homebrew only supports the most recent three major versions of
+
+macOS)</li>
+
+</ul>
+
+<p>And here’s <a href="https://realpython.com/installing-python/">a more
+
+general tutorial</a> for all platforms.</p>
+
+<p>Linux users and users of other UNIX-alikes: In this class, you can
+
+probably get away with using your distribution’s default Python 3.
+
+However, you may want to research a tool like <a
+
+href="https://github.com/pyenv/pyenv">pyenv</a> or <a
+
+href="https://asdf-vm.com/">asdf</a> to make it easier to have multiple
+
+versions of Python available on your machine at once (e.g., your
+
+distribution’s Python alongside the latest version of Python).</p>
+
+<p>Another option for many platforms is <a
+
+href="https://www.anaconda.com/download">Anaconda</a> (though please
+
+read the licensing terms).</p>
+
+<p>Note that (as far as I know) there is no satisfactory option for
+
+installing Python on iOS or Android. If you only have access to iOS
+
+and/or Android, you may be better off using a web-hosted service like <a
+
+href="https://www.pythonanywhere.com/pricing/">Python Anywhere</a> (you
+
+will need their $5/mo service, which includes access to Jupyter
+
+Notebooks). You can also use <a
+
+href="https://colab.research.google.com/">Google Colab</a> in a
+
+pinch.</p>
+
+<h3 id="reading-assigned">Reading assigned</h3>
+
+<p>To be discussed at the beginning of session 02.</p>
+
+<p><strong>Pipkin</strong> gives a clear and friendly historical
+
+overview of character encoding. How might character encoding have turned
+
+out differently? Amiri <strong>Baraka</strong> and Ross
+
+<strong>Gay</strong> present different takes on writing interfaces.
+
+Consider the material of the tools you use for writing: where do those
+
+tools come from? What affordances do they have? What kinds of written
+
+artifacts do they produce? <strong>Weingart</strong> talks in detail
+
+about <em>digital</em> materiality: how is text manipulated, contorted,
+
+reconstituted, constrained in the process of being digitized and
+
+transmitted electronically? <strong>Drucker</strong> gives an overview
+
+of different types of materiality on the page and argues that text is
+
+“an event, rather than an entity. The event is the entire system of
+
+reader, aesthetic object and interpretation – but in that set of
+
+relations, the ‘text’ is constituted anew each time.” Do you agree?</p>
+
+<ul>
+
+<li>Baraka, Amiri. “Technology &amp; Ethos.” <em>Raise, Race, Rays,
+
+Raze; Essays since 1965</em>, Random House, 1972, pp. 155–58.</li>
+
+<li>Drucker, Johanna. <a
+
+href="https://doi.org/10.1080/13534640903208834">“Entity to Event: From
+
+Literal, Mechanistic Materiality to Probabilistic Materiality.”</a>
+
+<em>Parallax</em>, vol. 15, no. 4, Nov. 2009, pp. 7–17.</li>
+
+<li>Gay, Ross. “Writing by Hand.” <em>The Book of Delights: Essays</em>,
+
+Algonquin Books, 2019, pp. 31–33.</li>
+
+<li>Pipkin, Everest. “<a href="https://ifyoulived.org/fuzzy/">The fuzzy
+
+edges of character encoding.</a>” Running Dog Magazine, 2020.</li>
+
+<li>Weingart, Scott B. “<a
+
+href="https://www.vice.com/en_us/article/kzdn8n/the-route-of-a-text-message-a-love-story">The
+
+Route of a Text Message, a Love Story.</a>” Vice, 22 Feb. 2019.</li>
+
+</ul>
+
+<p>Optional:</p>
+
+<ul>
+
+<li>For more on “lighght” (optional): Daly, Ian. <a
+
+href="https://www.poetryfoundation.org/articles/68913/you-call-that-poetry">“You
+
+Call That Poetry?!”</a> Poetry Foundation, 25 Aug. 2007.</li>
+
+<li>On the materiality of American Sign Language: Christine Sun Kim, <a
+
+href="https://www.youtube.com/watch?v=2Euof4PnjDk">The enchanting music
+
+of sign language</a> (cw: TED Talk, but it’s good!)</li>
+
+<li>More on <a
+
+href="http://videocatalog.gallaudet.edu/?embed=6518">Malzkuhn’s ASL
+
+translation of “Jabberwocky”</a> (performed here by Joe Velez): Jeffrey
+
+Mansfield, <a
+
+href="https://web.archive.org/web/20160922040138/http://www.formsofcouncil.org/en/inquiries/30_tacet/784_space_time_and_gesture">“Space,
+
+Time and Gesture: Gestural Expression, Sensual Aesthetics and Crisis in
+
+Contemporary Spatial Paradigms,”</a> in TACET #03 – From Sound Space
+
+(Paris: Les presses du réel, 2014).</li>
+
+<li>Mosher, Dave. “<a
+
+href="https://www.wired.com/2012/03/qwerty-effect-language/">The QWERTY
+
+Effect: How Typing May Shape the Meaning of Words.</a>” <em>Wired</em>,
+
+Mar. 2012.</li>
+
+</ul>
+
+<h2 id="session-02-python-introduction">Session 02: Python
+
+introduction</h2>
+
+<p>Date: 2025-01-30</p>
+
+<ul>
+
+<li>Reading discussion</li>
+
+<li><a href="https://www.anaconda.com/download/">Installing Anaconda</a>
+
+(download the “graphical installer” for your platform)</li>
+
+<li><a
+
+href="https://github.com/aparrish/rwet/blob/master/jupyter-notebook-tutorial.ipynb">Introduction
+
+to Jupyter Notebook</a></li>
+
+<li>The Python ecosystem (an overview). Plus: why Python?</li>
+
+<li><a
+
+href="https://gist.github.com/aparrish/50803e0ae51a2c6e775af36ea79be285">Enough
+
+Python</a></li>
+
+</ul>
+
+<p>No homework this week. Instead, do something to beef up your Python
+
+knowledge a bit. For example, <a
+
+href="https://github.com/aparrish/progdat/blob/main/lists.ipynb">review
+
+this notebook on Python lists and loops</a>. Then <a
+
+href="https://github.com/aparrish/progdat/blob/main/exercise-1.ipynb">test
+
+your knowledge with this worksheet</a>. Or try going through the first
+
+few chapters of <a href="https://automatetheboringstuff.com/">Automate
+
+the Boring Stuff with Python</a> (<a
+
+href="https://www.youtube.com/watch?v=1F_OgqRuSdI&amp;list=PL0-84-yl1fUnRuXGFe_F7qSH1LEnn9LkW">YouTube
+
+playlist of video lessons</a>). Other good Python resources:</p>
+
+<ul>
+
+<li><a href="https://www.pythoncheatsheet.org/">Python cheatsheet</a>: a
+
+good overview of fundamental syntax and important parts of the standard
+
+library</li>
+
+<li><a href="https://allendowney.github.io/ThinkPython/">Think
+
+Python</a>: thoughtful tutorial from the ground up, in Jupyter notebook
+
+format!</li>
+
+<li>If you do a web search for Python programming questions, you’ll
+
+usually find yourself faced with a lot of spammy sites of dubious
+
+quality (and a lot of pay-only Medium posts, also of dubious quality).
+
+One site that comes up a lot in search results that is pretty okay (at
+
+least for now) is <a href="https://realpython.com/">Real Python</a>. You
+
+might consider using their search feature directly instead of a general
+
+web search.</li>
+
+<li>If you’re interested in branching out, <a
+
+href="https://awesome-python.com/">Awesome Python</a> provides an
+
+up-to-date index of Python tools and libraries, organized by topic.</li>
+
+</ul>
+
+<h2 id="session-03-text-encodings-and-glitch-poetics">Session 03: Text
+
+encodings and glitch poetics</h2>
+
+<p>Date: 2025-02-06</p>
+
+<ul>
+
+<li>Python: <a
+
+href="https://github.com/aparrish/material-of-language/blob/master/letters-as-numbers.ipynb">Letters
+
+as numbers</a></li>
+
+<li>Example files used in the notebook: <a
+
+href="https://github.com/aparrish/material-of-language/blob/master/frost.txt">frost.txt</a>,
+
+<a
+
+href="https://github.com/aparrish/material-of-language/blob/master/wikipedia-emoji.txt">wikipedia-emoji.txt</a>,
+
+<a
+
+href="https://github.com/aparrish/material-of-language/blob/master/kitty.png">kitty.png</a>
+
+(though feel free to use your own texts and images!)</li>
+
+<li>How to upload and share Jupyter Notebooks</li>
+
+</ul>
+
+<h3 id="sketch-2-glitching-encoding">Sketch #2: Glitching encoding</h3>
+
+<p>Due at the beginning of session 04.</p>
+
+<p>Using the example code discussed in class, create a composition based
+
+on computational manipulation of data, either on a
+
+character-by-character or byte-by-byte basis.</p>
+
+<p>Works and inspiration:</p>
+
+<ul>
+
+<li><a href="http://ucnv.github.io/pnglitch/">Art of the PNG
+
+Glitch</a></li>
+
+<li>Seyffarth, Esther. <a
+
+href="http://sync.abue.io/issues/191220es_sync2_49_reverses.pdf"><em>How
+
+not to reverse a string</em>.</a></li>
+
+<li>Joel Swanson: <a
+
+href="http://joelericswanson.com/projects#/ladygaga/">Lady Gaga’s
+
+Twitter Feed Translated Into Morse Code</a></li>
+
+<li>Jörg Piringer: <a
+
+href="https://joerg.piringer.net/index.php?href=unicode/unicode.xml&amp;mtitle=projects">Unicode</a><br />
+
+</li>
+
+<li><a href="https://kameelahr.com/Work">Kameelah Janan Rasheed</a></li>
+
+<li><a href="https://ryanericksonart.com/">Ryan Erickson</a></li>
+
+<li><a
+
+href="https://www.degruyter.com/document/doi/10.1515/semi.1990.78.1-2.75/html">Jeffersonian
+
+discourse analysis conventions</a></li>
+
+<li><a href="https://www.asciiart.eu/">ASCII art</a>, <a
+
+href="https://16colo.rs/">ANSI art</a> and <a
+
+href="https://text-mode.tumblr.com/tagged/shiftJIS">Shift-JIS
+
+art</a></li>
+
+<li><a href="https://www.siberart.com/the-untitled-project">Matt Siber’s
+
+<em>Untitled Project</em></a></li>
+
+</ul>
+
+<h1 id="unit-β-on-the-page-against-the-page">Unit β: On the page,
+
+against the page</h1>
+
+<h2 id="session-04-web-pages">Session 04: Web pages</h2>
+
+<p>Date: 2025-02-13</p>
+
+<ul>
+
+<li>Homework presentations</li>
+
+<li>History of computational layout</li>
+
+<li>Intro to concrete poetry</li>
+
+<li><a
+
+href="https://github.com/aparrish/material-of-language/blob/master/documents-with-html-and-css.ipynb">Writing
+
+HTML and CSS by hand</a> (note that some styles don’t render correctly
+
+in GitHub’s preview!)</li>
+
+</ul>
+
+<h3 id="reading-assigned-1">Reading assigned</h3>
+
+<p>To be discussed at the beginning of session 05.</p>
+
+<p><strong>Beingessner</strong>’s article is an informative overview of
+
+the technology of text rendering, and how even the most straightforward
+
+kinds of text rendering are incredibly complicated. Can you think of
+
+kinds of text that would be <em>impossible</em> to render with a
+
+computer? <strong>Eve</strong> gives a history of the most popular
+
+format for digital page design-the PDF-and argues that the digital page
+
+is not a “substitution of screen for codex” but instead a hybrid of
+
+conventions from many historical and physical formats. I’m especially
+
+interested in his argument that the wax tablet prefigures the
+
+“non-rivalrous malleability” of the digital screen. <strong>Li</strong>
+
+writes extensively on his techninques for writing concrete poetry (in
+
+Chinese) and strategies that have been deployed to translate it (into
+
+English). Can you think of other kinds of text or particular examples of
+
+texts that similarly resist translation? <strong>Reed</strong>’s text
+
+explores Terrance Hayes’ “Sonnet” as a limit case of concrete poetics,
+
+arguing that “in drawing attention to the ‘facticity’ of words” concrete
+
+poetry “suggests the possibilities of unsaying—speaking of the world and
+
+history without repeating the already said,” thereby enabling a unique
+
+form of witness.</p>
+
+<ul>
+
+<li>Beingessner, Aria. “<a
+
+href="https://gankra.github.io/blah/text-hates-you/">Text rendering
+
+hates you.</a>”</li>
+
+<li>Eve, Martin Paul. “<a
+
+href="https://muse.jhu.edu/pub/1/article/872063">New Leaves: Riffling
+
+the History of Digital Pagination.</a>” <em>Book History</em>, vol. 25,
+
+no. 2, 2022, pp. 479–502.</li>
+
+<li>Li, Chen. “<a
+
+href="https://ebookcentral-proquest-com.proxy.library.nyu.edu/lib/nyulibrary-ebooks/reader.action?docID=5964787&amp;ppg=75">Writing
+
+and Translating Concrete Poetry in Chinese Characters.</a>” <em>The
+
+Translation and Transmission of Concrete Poetry</em>, edited by John
+
+Corbett and Ting Huang, 1st ed., Routledge, 2019, pp. 56–70. Crossref,
+
+doi:10.4324/9781315145563.</li>
+
+<li><em>Only pp. 27-37 from</em> Reed, Anthony. “<a
+
+href="https://muse.jhu.edu/chapter/1355718">Broken Witness: Concrete
+
+Poetry and a Poetics of Unsaying.</a>” <em>Freedom Time: The Poetics and
+
+Politics of Black Experimental Writing</em>, Johns Hopkins University
+
+Press, 2014, pp. 27–58. (For context, you may want to review the
+
+concrete works in N.H. Pritchard’s <a
+
+href="http://eclipsearchive.org/projects/MATRIX/Matrix.pdf"><em>The
+
+Matrix</em></a>, particularly sections II, III and IV.)</li>
+
+</ul>
+
+<p>Optional:</p>
+
+<ul>
+
+<li>D’Ambrosio, Matteo. “<a
+
+href="https://impactum-journals.uc.pt/matlit/article/view/5274">The
+
+Early Computer Poetry and Concrete Poetry.</a>” MATLIT: Materialities of
+
+Literature, vol. 6, no. 1, Aug. 2018, pp. 51–72.</li>
+
+<li>Johnston, David (Jhave). “<a
+
+href="http://electronicbookreview.com/essay/the-assimilation-of-text-by-image/">The
+
+Assimilation of Text by Image.</a>” <em>Electronic Book Review</em>, 7
+
+Oct. 2012. (Wide-ranging, contains many great references for interesting
+
+work, well-argued though I’m not sure I agree with the conclusions, a
+
+bit unhinged in that Jhave way.)</li>
+
+<li>S Cearley. <a
+
+href="http://www.futureanachronism.com/digitalpaper/HowToReadAConcretePoem.pdf">How
+
+to read a concrete poem.</a> (Helpful if you’re unfamiliar with the
+
+genre and need a gentle introduction.)</li>
+
+<li>Simonowski, Roberton. “<a
+
+href="http://www.dichtung-digital.org/2003/parisconnection/concretepoetry.htm">Concrete
+
+poetry in analog and digital media</a>.”</li>
+
+<li>Solt, Mary Ellen. <a href="http://www.ubu.com/papers/solt/">Concrete
+
+Poetry: A World View</a></li>
+
+<li>Wichary, Marcin. “<a
+
+href="https://newsletter.shifthappens.site/archive/how-i-learned-to-hate-indesign/">How
+
+I Learned to Hate InDesign.</a>” Shift Happens Newsletter, 6 July 2021.
+
+(A tale of computational page design.)</li>
+
+<li>The <a href="https://collection.eliterature.org/">Electronic
+
+Literature Collection</a> is a good place to look for examples of
+
+specifically computational concrete poetry (see the “visual” categories
+
+of <a
+
+href="https://collection.eliterature.org/2/extra/keywords.html#vispn">ELC2</a>
+
+and <a
+
+href="https://collection.eliterature.org/4/index#g_visual%20poetry">ELC4</a>
+
+for example.)</li>
+
+<li><a href="https://www.youtube.com/watch?v=qcMuyHzhvpI">A very good
+
+explanation of the basics of font rendering</a> from VoxelRifts on
+
+YouTube, including methods of rasterization in 3D environments and the
+
+text shaping process.</li>
+
+</ul>
+
+<h2 id="session-05-generating-markup-part-1">Session 05: Generating
+
+markup, part 1</h2>
+
+<p>Date: 2025-02-20</p>
+
+<ul>
+
+<li>Reading discussion</li>
+
+<li>Python: <a
+
+href="https://github.com/aparrish/material-of-language/blob/master/interpolating-strings.ipynb">Interpolating
+
+strings</a></li>
+
+</ul>
+
+<p>No homework this week, but here are some suggested activities:</p>
+
+<ul>
+
+<li>Write a web page by hand and upload it somewhere on the Internet
+
+(e.g., <a href="https://neocities.org/">neocities</a>).</li>
+
+<li>Revisit sketch #2 to use HTML/CSS in its output for formatting
+
+purposes, or use one of the methods of string interpolation that we
+
+talked about in today’s tutorial.</li>
+
+<li>Figure out how to replicate some of the work that we’ve been doing
+
+in class so far, but in a different programming language (e.g.,
+
+JavaScript, C#).</li>
+
+<li>Go through <a
+
+href="https://github.com/aparrish/progdat/blob/main/dictionaries-sets-tuples.ipynb">this
+
+tutorial on Python data structures</a> like dictionaries and sets.</li>
+
+</ul>
+
+<h2 id="session-06-generating-markup-part-2">Session 06: Generating
+
+markup, part 2</h2>
+
+<p>Date: 2025-02-27</p>
+
+<ul>
+
+<li>Python: <a
+
+href="https://github.com/aparrish/material-of-language/blob/master/concrete-compositions-html.ipynb">Concrete
+
+compositions with loops, trigonometry and markup generation</a> (Note:
+
+this notebook is significantly truncated in the GitHub preview! Make
+
+sure you download it and work with it locally.)</li>
+
+</ul>
+
+<h3 id="sketch-3-computational-concrete">Sketch #3: Computational
+
+concrete</h3>
+
+<p>Due at the beginning of session 07.</p>
+
+<p><a href="http://www.ubu.com/papers/draper.html">R.P. Draper</a> says
+
+that concrete poetry “is the creation of verbal artefacts which exploit
+
+the possibilities, not only of sound, sense and rhythm—the traditional
+
+fields of poetry—but also of … the two-dimensional space of letters on
+
+the printed page.” Imagine a concrete poetry that also exploits the
+
+possibilities of computation (by, e.g., algorithmically placing words on
+
+the page). Make use of the in-class example code or other computational
+
+tools.</p>
+
+<p>Some inspiration:</p>
+
+<ul>
+
+<li><a href="http://chenqianxun.com/graphein/">Qianxun Chen,
+
+<em>Graphein</em></a></li>
+
+<li><a href="https://lizadaly.com/pages/a-physical-book/">Liza Daly,
+
+<em>A Physical Book</em></a></li>
+
+<li><a href="https://benfry.com/tendril/">Ben Fry,
+
+<em>Tendril</em></a></li>
+
+<li>Jen Bervin: <a
+
+href="http://jenbervin.com/projects/draft-notation#1">Draft
+
+notation</a>, <a
+
+href="http://www.ubu.com/contemp/speechless/speechless6.pdf">Speechless</a></li>
+
+<li>bpNichol: <a href="http://www.vispo.com/bp/introduction.htm">First
+
+Screening</a>, <a
+
+href="http://www.bpnichol.ca/sites/default/files/archives/document/Konfessions_of_an_Elizabethan_Fan_Dancer_bpNichol_1973.pdf">Konfessions
+
+of an Elizabethan Fan Dancer</a></li>
+
+<li><a href="http://www2.uol.com.br/augustodecampos/poemas.htm">Augusto
+
+De Campos</a></li>
+
+<li><a href="http://www.vispo.com/guests/index.htm">Guests on
+
+vispo.com</a></li>
+
+<li><a href="http://www.anatol.cc/index_en.html">Anatol Knotek</a></li>
+
+<li>Jürg Lehni &amp; Alex Rich, <a
+
+href="http://juerglehni.com/works/empty-words">Empty words</a></li>
+
+<li><a href="http://alysonprovax.com/">Alyson Provax</a></li>
+
+</ul>
+
+<h1 id="unit-γ-models-of-the-asemic">Unit γ: Models of the asemic</h1>
+
+<h2 id="session-07-writing-as-gesture">Session 07: Writing as
+
+gesture</h2>
+
+<p>Date: 2025-03-06</p>
+
+<ul>
+
+<li>Homework presentations</li>
+
+<li>Writing as gesture</li>
+
+<li>Some asemic works</li>
+
+<li>Python: <a
+
+href="https://github.com/aparrish/material-of-language/blob/master/lines-and-asemic-vsketch.ipynb">Generative
+
+asemic writing with Python and vsketch</a></li>
+
+</ul>
+
+<h3 id="reading-assigned-2">Reading assigned</h3>
+
+<p>To be discussed at the beginning of session 08. (Reading notes
+
+TK.)</p>
+
+<ul>
+
+<li>Gladman, Renee. <a
+
+href="https://www.wavepoetry.com/products/prose-architectures"><em>Prose
+
+Architectures.</em></a> Wave Books, 2017. (Just the introduction and
+
+Fred Moten’s afterword.)</li>
+
+<li>Hoff, Anders. “<a
+
+href="https://inconvergent.net/2017/spline-script/">Spline Script.</a>”
+
+<em>inconvergent.net</em>, 1 Oct. 2017.</li>
+
+<li>Li, Xingshan, et al. “<a
+
+href="https://www.nature.com/articles/s44159-022-00022-6">Universal and
+
+Specific Reading Mechanisms across Different Writing Systems.</a>”
+
+<em>Nature Reviews Psychology</em>, vol. 1, no. 3, 3, Mar. 2022,
+
+pp. 133–44.</li>
+
+<li>Schwenger, Peter. “<a
+
+href="https://doi.org/10.5749/j.ctvthhd18.3">What Asemic Writing Is, and
+
+Why.</a>” <em>Asemic</em>, University of Minnesota Press, 2019,
+
+pp. 1–18.</li>
+
+</ul>
+
+<p>Optional:</p>
+
+<ul>
+
+<li>Durgin, Patrick. “<a
+
+href="http://jacket2.org/commentary/witness-mirtha-dermisache">Witness
+
+Mirtha Dermisache.</a>” <em>Jacket2</em>, 8 Sept. 2014. See also: <a
+
+href="https://web.archive.org/web/20140911132408/http://www.11x7galeria.com/uploads/Carta%20Barthes%20-%20Dermisache%20ING.pdf">Barthes’
+
+letter to Mirtha Dermisache</a>)</li>
+
+<li>“Drawing, Writing and Calligraphy.” Lines: A Brief History, by Tim
+
+Ingold, Routledge, 2008, pp. 120–51.</li>
+
+<li>Aima, Rahel. “<a
+
+href="https://reallifemag.com/definition-not-found/">Definition Not
+
+Found.</a>” <em>Real Life</em>, Sept.
+
+<ol start="2016" type="1">
+
+<li></li>
+
+</ol></li>
+
+<li>Vincler, John. “<a
+
+href="https://www.theparisreview.org/blog/2018/08/28/dwelling-places-on-renee-gladmans-turn-to-drawing/">Dwelling
+
+Places: On Renee Gladman’s Turn to Drawing.</a>” <em>The Paris
+
+Review</em>, 28 Aug. 2018.</li>
+
+<li>Bartosz Ciechanowski, <a
+
+href="https://ciechanow.ski/curves-and-surfaces/">Curves and
+
+Surfaces</a> (approachable introduction to the math of Bézier
+
+curves)</li>
+
+</ul>
+
+<h2 id="session-08-writing-as-data">Session 08: Writing as data</h2>
+
+<p>Date: 2025-03-13</p>
+
+<ul>
+
+<li>Reading discussion</li>
+
+<li><a
+
+href="https://github.com/aparrish/material-of-language/blob/master/lines-and-asemic-vsketch.ipynb">Making
+
+marks with Python, continued</a></li>
+
+<li>Additional tutorials for you to draw from:
+
+<ul>
+
+<li><a
+
+href="https://github.com/aparrish/material-of-language/blob/master/polylines-are-just-numbers.ipynb">Polylines
+
+are just numbers</a> (more advanced transformations on polylines: shear,
+
+noise, filtering…)</li>
+
+<li><a
+
+href="https://github.com/aparrish/material-of-language/blob/master/imitating-line-thickness-variation.ipynb">Imitating
+
+line thickness variation</a></li>
+
+<li><a
+
+href="https://github.com/aparrish/material-of-language/blob/master/kmeans-glyphs-vsketch.ipynb">K-means
+
+glyphs</a> (shapes from evenly-distributed random points)</li>
+
+<li><a
+
+href="https://github.com/aparrish/material-of-language/blob/master/polylines-data-01-hershey-fonts.ipynb">Polylines
+
+are just data: Hershey fonts</a> (parsing and using Hershey font
+
+data)</li>
+
+</ul></li>
+
+</ul>
+
+<p>No homework this week, but here are some suggested activities:</p>
+
+<ul>
+
+<li>Experiment with non-computational asemic writing. What are the
+
+expressive and formal affordances of the practice?</li>
+
+<li>Investigate a 2D drawing/geometry library other than vsketch (or
+
+p5js). Some suggestions: <a
+
+href="https://github.com/kyamagu/skia-python?tab=readme-ov-file">Skia
+
+w/Python bindings</a>, <a
+
+href="https://shapely.readthedocs.io/en/stable/">Shapely</a>, <a
+
+href="https://py5coding.org/">py5</a> (Python version of Processing), <a
+
+href="http://www.pygame.org/news.html">pygame</a>, the <a
+
+href="https://docs.python.org/3/library/turtle.html">Python turtle
+
+graphics library</a>, <a
+
+href="https://pillow.readthedocs.io/en/stable/reference/ImageDraw.html">Pillow</a>.
+
+If you’re feeling really adventurous, you could play around with
+
+computer-generated 3D modeling with (e.g.) <a
+
+href="https://github.com/jeff-dh/SolidPython">SolidPython2</a>.</li>
+
+</ul>
+
+<h2 id="session-09-plots-and-schemes">Session 09: Plots and schemes</h2>
+
+<p>Date: 2025-03-20</p>
+
+<ul>
+
+<li>Python: <a
+
+href="https://github.com/aparrish/material-of-language/blob/master/axidraw-and-vsketch.ipynb">Making
+
+marks with the AxiDraw</a></li>
+
+</ul>
+
+<h3 id="sketch-4-plots-without-meaning">Sketch #4: Plots without
+
+meaning</h3>
+
+<p>Due at the beginning of session 10.</p>
+
+<p>Create a computer program that produces an asemic writing
+
+composition. Your program should implement a system of rules that
+
+produce visual artifacts that imitate the motion of physical writing or
+
+suggest the appearance of written language. Use the AxiDraw plotter to
+
+draw your piece on something (paper probably but I’m open to
+
+alternatives).</p>
+
+<p>Some inspiration:</p>
+
+<ul>
+
+<li>Parviz Tanavoli, <a
+
+href="https://greyartgallery.nyu.edu/artworks/heech-nothing-2/">Heech</a></li>
+
+<li>Micah Elizabeth Scott, <a
+
+href="https://diode.zone/w/e5c80ea3-7c9c-4feb-9afd-d03bcf58c49f">Pen
+
+Wiggler</a></li>
+
+<li>So Kanno and Takahiro Yamaguchi, <a
+
+href="https://neural.it/2017/04/asemic-languages-ai-language-vacuums/">Asemic
+
+languages</a></li>
+
+<li><a href="https://www.samroxaschua.com/?page_id=438">Sam
+
+Roxas-Chua</a></li>
+
+<li>Joel Swanson, <a
+
+href="http://joelericswanson.com/projects#/unrecognizable-letterforms-alphabits/">Unrecognizable
+
+Letterforms (Alphabits)</a></li>
+
+<li>Manfred Mohr, <a href="https://youtu.be/j4M28FEJFF8">Cubic
+
+Limit</a>, <a href="http://www.emohr.com/ww4_out.html">other algorithmic
+
+experiments</a></li>
+
+<li>Bleeptrack &amp; Harry Josephine Giles, <a
+
+href="http://sync.abue.io/issues/191227bhjg_sync2_50_glyphsprache.pdf">glyphsprache</a></li>
+
+<li>Weidi Zhang, <a
+
+href="https://www.zhangweidi.com/cangjiepoetry">Cangjie’s
+
+Poetry</a></li>
+
+<li><a href="https://www.northing.no/the-language-of-bugs">The Language
+
+of Bugs</a></li>
+
+</ul>
+
+<h1 id="unit-δ-type-and-computation">Unit δ: Type and computation</h1>
+
+<h2 id="session-10-fonts-as-data">Session 10: Fonts as data</h2>
+
+<p>Date: 2025-04-03</p>
+
+<ul>
+
+<li>Reading discussion</li>
+
+<li>Introduction to how fonts work. Dear god.</li>
+
+<li>Python: <a
+
+href="https://github.com/aparrish/material-of-language/blob/master/manipulating-font-data-vsketch.ipynb">Font
+
+manipulation</a>, part 1</li>
+
+</ul>
+
+<h3 id="reading-assigned-3">Reading assigned</h3>
+
+<p>To be discussed in session 10.</p>
+
+<p>On fonts: what they are (Lehni), how they might come to be
+
+(Grießhammer), how they work (or don’t work; Nasser), how they’re
+
+designed (Shen).</p>
+
+<ul>
+
+<li>Lehni, Jürg. “<a
+
+href="https://www.typotheque.com/articles/typeface_as_programme">Typeface
+
+As Programme</a>.” Typotheque, 14 Apr. 2011.</li>
+
+<li>To watch: “<a
+
+href="http://coopertype.org/event/the_hershey_fonts">The Hershey
+
+Fonts</a>.” (Frank Grießhammer)</li>
+
+<li>Nasser, Ramsey. “<a
+
+href="https://increment.com/programming-languages/unplain-text-primer-on-non-latin/">Unplain
+
+text</a>.”</li>
+
+<li>Shen, Juliet. “<a
+
+href="https://typeculture.com/academic-resource/articles-essays/aesthetic-innovation-in-indigenous-typefaces-designing-a-lushootseed-font/">Aesthetic
+
+Innovation in Indigenous Typefaces: Designing a Lushootseed
+
+Font</a>.”</li>
+
+</ul>
+
+<h2 id="session-11-fonts-as-instructions">Session 11: Fonts as
+
+instructions</h2>
+
+<p>Date: 2025-04-10</p>
+
+<ul>
+
+<li>Reading discussion</li>
+
+<li>Python: <a
+
+href="https://github.com/aparrish/material-of-language/blob/master/manipulating-font-data-vsketch.ipynb">Font
+
+manipulation</a>, part 2</li>
+
+</ul>
+
+<p>No homework this week. Spend some time revisiting previous
+
+assignments and making small prototypes to help you figure out what you
+
+want to do for your final project.</p>
+
+<h2 id="session-12-wildcard">Session 12: Wildcard</h2>
+
+<p>Date: 2025-04-17</p>
+
+<ul>
+
+<li>Final project pitches</li>
+
+<li>Another short tutorial. One of:
+
+<ul>
+
+<li><a
+
+href="https://github.com/aparrish/material-of-language/blob/master/interactive-widgets-vsketch.ipynb">Interactive
+
+widgets with ipywidgets and vsketch</a></li>
+
+<li><a href="https://coldtype.goodhertz.com/">Coldtype tutorial</a></li>
+
+<li><a href="https://py5coding.org/">py5</a></li>
+
+</ul></li>
+
+</ul>
+
+<h2 id="sessions-13-and-14-final-project-presentations">Sessions 13 and
+
+14: Final project presentations</h2>
+
+<p>Dates: 2025-04-24, 2025-05-01</p>
+
+<ul>
+
+<li>Final project presentations. (Dates will be assigned at random,
+
+assignments TK.)</li>
+
+</ul>
+
+</body>
+
+</html>
+
+
