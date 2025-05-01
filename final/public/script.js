@@ -4,8 +4,8 @@ const INITIAL_LETTER_WIDTH = 100;
 const INITIAL_LETTER_HEIGHT = 100; 
 const LETTER_SPACING = 150;       
 const SPACE_WIDTH = 60;           
-const MARGIN_LEFT = 20;           // for start point
-const MARGIN_TOP = 20;            // for start point
+const MARGIN_LEFT = 20;// for start point
+const MARGIN_TOP = 20;// for start point
 const LINE_SPACING = 150;         
 
 let verticalScale = 10;
@@ -115,10 +115,6 @@ function generateLettersFromText(text) {
                 xPosition = MARGIN_LEFT;
                 yPosition += LINE_SPACING;
             }
-        } else if (char === '\n') {
-            // Handle explicit line breaks
-            xPosition = MARGIN_LEFT;
-            yPosition += LINE_SPACING;
         }
     });
 }
